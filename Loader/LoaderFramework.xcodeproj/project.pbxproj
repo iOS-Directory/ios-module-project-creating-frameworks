@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		04545EFB244200130089C95F /* LoaderFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 04545EF9244200130089C95F /* LoaderFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04545F102442029C0089C95F /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04545F0F2442029C0089C95F /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04545EF6244200130089C95F /* LoaderFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoaderFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04545EF9244200130089C95F /* LoaderFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoaderFramework.h; sourceTree = "<group>"; };
 		04545EFA244200130089C95F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04545F0F2442029C0089C95F /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				04545EF9244200130089C95F /* LoaderFramework.h */,
 				04545EFA244200130089C95F /* Info.plist */,
+				04545F0F2442029C0089C95F /* LoadingViewController.swift */,
 			);
 			path = LoaderFramework;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					04545EF5244200130089C95F = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04545F102442029C0089C95F /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		04545EFF244200130089C95F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = N3P8URX7UV;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.productions.fritzgt.LoaderFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		04545F00244200130089C95F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = N3P8URX7UV;

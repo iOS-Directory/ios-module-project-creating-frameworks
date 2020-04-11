@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LoaderFramework
 
 class ViewController: UIViewController {
 
